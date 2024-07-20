@@ -32,6 +32,7 @@ def calculate_strategy(this_info_sets_regret: Dict[str, float]) -> Dict[str, flo
         Strategy as a probability over actions.
     """
     # TODO: Could we instanciate a state object from an info set?
+    print('my version')
     actions = this_info_sets_regret.keys()
     regret_sum = sum([max(regret, 0) for regret in this_info_sets_regret.values()])
     if regret_sum > 0:
